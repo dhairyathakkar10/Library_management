@@ -145,6 +145,7 @@ footer{
     background-color: #585C62;
     display: flex;
     width: 100%;
+    bottom: 1px;
 }
 .footer_container{
     width: 33.33%;
@@ -189,6 +190,36 @@ footer{
 }
 .contact_container iframe{
     padding-left: 17%;
+}
+.signUpForm{
+    margin: auto;
+    width: 12%;
+}
+.signUpForm input{
+    margin: 5%;
+    padding: 5%;
+    border-radius: 20px;
+}
+.signUpForm button{
+    background-color:#585C62;
+    padding: 4%;
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 45px;
+}
+.signUpForm button:hover{
+    background-color:#fff;
+    color: #000;
+    cursor: pointer;
+}
+.signUpIcons{
+    font-size: 50px;
+    display: block;
+    margin: auto;
+    width: 8%;
+}
+.signUpIcons i{
+    padding-left: 2%;
 }
 @media only screen and (max-width: 767px){
     .nav_bar{
