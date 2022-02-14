@@ -5,24 +5,25 @@
         <meta name="viewport" content="width=device-width, maximum-scale = 1">
         <link rel="stylesheet" href="Assignment_1.css">
         <link rel="icon" type="image" href="/images/favicon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
         <script src="https://kit.fontawesome.com/bf95ea0a2c.js" crossorigin="anonymous"></script>
         <script> 
-            function validateEmail(emailId)
-            {
-            var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-            if(emailId.value.match(mailformat))
-            {
-                document.form1.text1.focus();
-                return true;
-            }
-            else
-            {
-                alert("Invalid email address.");
-                document.form1.text1.focus();
-                return false;
-            }
-            }    
-            </script>
+        const email =document.getElementById('email');
+        email.addEventListener('blur', ()=>{
+        let regex =/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+        let s = email.value;
+        if(regex.test(s)){
+            email.classList.remove('is-invalid');
+            emailError = true;
+        }
+        else{
+            email.classList.add(
+              'is-invalid');
+            emailError = false;
+        }
+    }) 
+    </script>
     </head>
     <body style="margin: 0!important;">
         <!--Navbar-->
@@ -50,13 +51,18 @@
         <!--Main content-->
         <h2 style="text-align: center;">Welcome to AI&DS Library</h2>
         <h4 style="text-align: center;">Sign-up to continue</h4>
-        <form class="signUpForm" name="form1" method="POST" action="">
-            <input name="name" type="text" id="name" placeholder="Full Name" required=""><br>
-            <input type="text" id="email" placeholder="email" name="email" required=""><br>
-            <input type="password" id="pswd-1" placeholder="Password" required=""><br>
-            <input type="password" id="pswd-2" placeholder="Enter Password again" required=""><br>
-            <button type="submit" name="submit" onclick="validateEmail(document.form1.email)">SIGN UP</button>
-        </form>
+        <form id="form" method="post" action="">
+            First name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname">
+            <br>
+            Email:<br>
+            <input type="email" name="u_email" value="johndoe@gmail.com">
+            <br>
+            <br><br>
+            <input type="submit" value="Submit">
         <h4 style="text-align: center;">Or Sign-up Using</h4>
         <div class="signUpIcons">
             <i class="fab fa-google"></i>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <title>AI&DS | Library Managment</title>
+        <meta name="viewport" content="width=device-width, maximum-scale = 1">
+        <link rel="stylesheet" href="Assignment_1.css">
+        <link rel="icon" type="image" href="/images/favicon.png">    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="validation.js"></script>   
+    </head>
+    <body>
+        <!--Nabar-->
+        <nav class="nav_bar">
+           <img src="images/Logo_no_bg.png">
+            <ul type="none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sign-up</a></li>
+                <li><a href="#">Issue a Book</a></li>
+            </ul>
+        </nav>
+        <!--Nabar End-->
+        <div class="container">
+            <div class="col-lg-8 m-auto d-block">
+              <form>
+                <div class="form-group">
+                    <label for="user">Username:</label>
+                    <input type="text" name="username" id="usernames" class="form-control">
+                    <h5 id="usercheck" style="color: red;" >**Username is missing</h5>
+                </div>
+       
+                <div class="form-group">
+                    <label for="user">Email:</label>
+                    <input type="email" name="email" id="email" required class="form-control">
+                </div>
+       
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="pass" id="password" class="form-control">
+                    <h5 id="passcheck" style="color: red;">**Please Fill the password</h5>
+                </div>
+       
+                <div class="form-group">
+                    <label for="conpassword">Confirm Password:</label>
+                    <input type="password" name="username" id="conpassword" class="form-control">
+                    <h5 id="conpasscheck" style="color: red;">**Password didn't match</h5>
+                </div>
+                <div style="padding-left: 75%; padding-top: 10px;">
+                <input type="submit" id="submitbtn" value="Submit" class="btn">  
+                </div>
+              </form>
+            </div>
+          </div>
+        <!--Footer-->
+        <footer style="position: absolute;">
+            <div class="footer_container">
+                <h3>Address</h3>
+                <p>Prakash Colony,<br>Salisbury Park,<br>Pune-411037</p>
+            </div>
+            <div class="footer_container">
+                <h3>Importnat Links</h3>
+                    <a href="#"><p style="line-height: 25px!important;">• Issue a book</p></a>
+                    <a href="#"><p style="line-height: 15px!important;">• Sign-up</p></a>
+                    <a href="#"><p style="line-height: 15px!important;">• Issue a book</p></a>
+            </div>
+            <div class="footer_container">
+                <h3>Contact Us.</h3>
+                <p style="line-height: 0!important;">Phone Number:</p><a href="tel:+918888101444">+91 8888 101 444</a>
+                <p style="line-height: 0!important;">Email:</p><a href="mailto:dhairya.22011097@viit.ac.in">dhairya.22011097@viit.ac.in</a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -212,6 +212,18 @@ footer{
     color: #000;
     cursor: pointer;
 }
+.btn{
+    background-color:#585C62;
+    padding: 3%;
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 45px;
+}
+.btn:hover{
+    background-color:#fff;
+    color: #000;
+    cursor: pointer;
+}
 .signUpIcons{
     font-size: 50px;
     display: block;
@@ -220,6 +232,12 @@ footer{
 }
 .signUpIcons i{
     padding-left: 2%;
+}
+.form-group{
+    padding-left: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
 }
 @media only screen and (max-width: 767px){
     .nav_bar{
